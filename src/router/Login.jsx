@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // qo'shildi
+import { useNavigate } from "react-router-dom"; 
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./login.css";
 
 function Login() {
-  const navigate = useNavigate(); // qo'shildi
+  const navigate = useNavigate(); 
 
   const [formData, setFormData] = useState({
     username: "derek",

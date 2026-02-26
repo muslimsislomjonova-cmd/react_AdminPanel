@@ -4,7 +4,7 @@
   background: #f4f6f9;
 }
 
-/* Sidebar */
+
 .sidebar {
   width: 230px;
   background: #2d3748;
@@ -33,7 +33,6 @@
   color: #90cdf4;
 }
 
-/* Logout pastga tushadi */
 .logout-btn {
   margin-top: auto;
   padding: 10px;
@@ -49,14 +48,14 @@
   background: #c53030;
 }
 
-/* Main */
+
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* Topbar */
+
 .topbar {
   background: white;
   padding: 15px 25px;
@@ -65,7 +64,7 @@
   justify-content: flex-end;
 }
 
-/* Content */
+
 .content {
   padding: 25px;
 }
