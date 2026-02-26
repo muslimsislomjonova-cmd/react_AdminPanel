@@ -36,9 +36,7 @@ function Dashboard() {
         </header>
 
         <section className="content">
-          <h1>Welcome, Muslima</h1>
-
-          
+          <h1>Welcome, Muslima</h1> 
         </section>
 
       </main>
