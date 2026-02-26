@@ -38,22 +38,7 @@ function Dashboard() {
         <section className="content">
           <h1>Welcome, Muslima</h1>
 
-          <div className="cards">
-            <div className="card">
-              <h3>Users</h3>
-              <p>120 Active users</p>
-            </div>
-
-            <div className="card">
-              <h3>Settings</h3>
-              <p>System is running</p>
-            </div>
-
-            <div className="card">
-              <h3>Status</h3>
-              <p>All services OK</p>
-            </div>
-          </div>
+          
         </section>
 
       </main>
