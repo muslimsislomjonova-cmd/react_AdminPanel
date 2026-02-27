@@ -60,7 +60,8 @@ function AdminLayout() {
         </header>
 
         <section className="content">
-          <Outlet />
+          <Outlet />  
+
         </section>
       </main>
     </div>
