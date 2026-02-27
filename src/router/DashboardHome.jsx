@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./dashboard.css";
 
 function Dashboard() {
@@ -11,7 +11,8 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-
+      <h1>Dashboard</h1>
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 }
