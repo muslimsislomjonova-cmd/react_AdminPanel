@@ -1,0 +1,42 @@
+.users-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.users-title {
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+}
+
+.users-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table tr:hover {
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+.password {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
