@@ -2,24 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
+
 
 .dashboard {
   display: flex;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #f6f9fc, #e9f1ff);
+  height: 100vh;
+  background: #f4f6f9;
 }
 
 
 .sidebar {
-  width: 240px;
-  background: #111827;
+  width: 250px;
+  background: #1e293b;
   color: white;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 20px;
 }
 
 .logo {
@@ -27,10 +27,12 @@
   font-size: 22px;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .menu {
   list-style: none;
+  flex: 1;
 }
 
 .menu li {
@@ -40,19 +42,20 @@
 .menu a {
   text-decoration: none;
   color: #cbd5e1;
-  padding: 10px;
+  padding: 10px 15px;
   display: block;
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .menu a:hover {
-  background: #1f2937;
+  background: #334155;
   color: white;
 }
 
+
 .menu a.active {
-  background: #2563eb;
+  background: #3b82f6;
   color: white;
 }
 
@@ -60,9 +63,9 @@
 .logout-btn {
   padding: 10px;
   border: none;
-  border-radius: 8px;
   background: #ef4444;
   color: white;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -71,28 +74,92 @@
   background: #dc2626;
 }
 
-
-
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+
 .topbar {
   height: 60px;
   background: white;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  padding: 0 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .user {
+  font-weight: 600;
+}
+
+
+.content {
+  padding: 25px;
+  overflow-y: auto;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: #3b82f6;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+.products-title,
+.users-title {
+  margin-bottom: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
 
-.content {
-  padding: 30px;
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.description {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.password {
+  font-family: monospace;
+  color: #64748b;
 }
