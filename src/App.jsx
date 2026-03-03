@@ -8,6 +8,7 @@ import Users from "./router/Users";
 import Carts from "./router/Carts";
 import Settings from "./router/Settings";
 import { ToastContainer } from "react-toastify";
+import { Component } from "react";
 
 function App() {
   return (
@@ -16,13 +17,13 @@ function App() {
         
         <Route path="/" element={<Login />} />
 
-       
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute>
               <AdminLayout />
             </ProtectedRoute>
+
           }
         >
           <Route index element={<DashboardHome />} />
@@ -30,8 +31,11 @@ function App() {
           <Route path="users" element={<Users />} />
           <Route path="carts" element={<Carts />} />
           <Route path="settings" element={<Settings />} />
+         
         </Route>
       </Routes>
+
+
 
       <ToastContainer />
     </BrowserRouter>
