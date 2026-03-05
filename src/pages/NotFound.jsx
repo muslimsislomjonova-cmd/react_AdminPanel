@@ -1,5 +1,5 @@
 function NotFound() {
-  return <h1>404 - Sahifa topilmadi</h1>;
+  return <h1>sahifa topilmadi (404)</h1>;
 }
 
 export default NotFound;
