@@ -1,44 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./router/Login";
-import ProtectedRoute from "./router/ProtectedRoute";
-import AdminLayout from "./router/AdminLayout";
-import DashboardHome from "./router/DashboardHome";
-import Products from "./router/Products";
-import Users from "./router/Users";
-import Carts from "./router/Carts";
-import Settings from "./router/Settings";
-import { ToastContainer } from "react-toastify";
-import { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import CreateProduct from "./pages/CreateProduct";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <Navbar />
+
       <Routes>
-        
-        <Route path="/" element={<Login />} />
-
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <AdminLayout />
-            </ProtectedRoute>
-
-          }
-        >
-          <Route index element={<DashboardHome />} />
-          <Route path="products" element={<Products />} />
-          <Route path="users" element={<Users />} />
-          <Route path="carts" element={<Carts />} />
-          <Route path="settings" element={<Settings />} />
-         
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/create" element={<CreateProduct />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-
-
-
-      <ToastContainer />
-    </BrowserRouter>
+    </>
   );
 }
 
